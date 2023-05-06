@@ -13,121 +13,18 @@
 //   8. Thumbnail
 
 
-// 0. Project Custom
-// -----------------
-
-// purple colors
-$brand-purpledrk: #43268F;
-$brand-purplelgt: #E1D7F9;
-$brand-offPurple: #F2EEFC;
-$brand-purpleSuperlgt: #E1D9F9;
-$purp-grey: #C7BFDE;
-$ghost-purple: #A194C8;
-$blanc-purple: #C6BFDE;
-$light-lavender: #F6F4FD;
-
-// image block settings
-@mixin image-padding {
-  padding-bottom: 0;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  padding-top: 0;
-} 
-
-@mixin buttonImg {
-  display: inline-block;
-  width: 21px;
-  vertical-align: middle;
-}
-
-// column block padding
-@mixin column-padding {
-  padding-bottom: 50px;
-  padding-right: 35px !important;
-  padding-left: 35px !important;
-  padding-top: 60px;
-}
-
-@mixin column-padding__bottom-0 {
-  padding-bottom: 0;
-  padding-right: 35px !important;
-  padding-left: 35px !important;
-  padding-top: 60px;
-}
-
-@mixin column-padding__contact-btn {
-  padding-bottom: 0;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  padding-top: 0;
-}
-
-// purple button styles
-@mixin secondary__purp {
-  background-color: $purp-grey;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  border-radius: 18px;
-  a {
-    color: $brand-purpledrk;
-  }
-}
-
-@mixin transparent__purp {
-  border: 1px solid $brand-purpledrk;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-right: 14px;
-  padding-left: 14px;
-  margin-right: 15px;
-  border-radius: 18px;
-  color: $brand-purpledrk;
-  font-size: 18px;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-@mixin solid__purp {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-right: 14px;
-  padding-left: 14px;
-  margin-right: 15px;
-  border-radius: 18px;
-  color: $brand-purpledrk;
-  background-color: $brand-offPurple;
-  background: $brand-offPurple;
-  font-size: 18px;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-@mixin link__button {
-  a {
-    color: $brand-purpledrk;
-    font-weight: 600;
-    font-size: 16px;
-  }
-}
-
-// No hyphens
-@mixin no__hyphen {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
 // 1. Global
 // ---------
 
 $primary-color: #2199e8;
-$secondary-color: $light-lavender;
+$secondary-color: #777777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #f3f3f3;
+$kayakBodyBG: #e4e5ea;
+$kayaHeaderBG: #ff690f;
+$kayakSubHeadBG: #d65600;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -175,8 +72,8 @@ $h3-font-size: 28px;
 $h4-font-size: 24px;
 $h5-font-size: 20px;
 $h6-font-size: 18px;
-$header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
+$header-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -238,7 +135,7 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // -------
 
 $menu-item-padding: 10px;
-$menu-item-gutter: 2px;
+$menu-item-gutter: 10px;
 $menu-item-color: $primary-color;
 
 // 8. Thumbnail

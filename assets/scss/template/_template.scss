@@ -2,205 +2,324 @@
 // Feel free to remove these styles for production!
 
 // Body Styles 
-body,
-html, 
 .body {
-  background: #f3f3f3 !important;
+  background: green;
+  background-color: $kayakBodyBG;
 }
 
-.contact-buttons__solid {
-  background-color: $brand-purpleSuperlgt;
-  background: $brand-purpleSuperlgt;
-  th > table > tbody > tr > th {
-    width: 0;
-  }
-  .columns {
-    padding-bottom: 50px;
-    padding-right: 35px !important;
-    padding-left: 35px !important;
-    padding-top: 26px !important;
-    p {
-      margin-top: 25px;
-      .contact__email {
-        @include solid__purp;
-        img {
-          @include buttonImg;
-        }
-        /* Small only */
-        @media only screen and (max-width: #{$global-breakpoint}) {
-          display: block;
-          text-align: center;
-          width: 108px;
-          margin: 0 auto !important;
-          margin-bottom: 20px !important;
-        }
-      }
-      .contact__phone {
-        @include solid__purp;
-        img {
-          @include buttonImg;
-        }
-        /* Small only */
-        @media only screen and (max-width: #{$global-breakpoint}) {
-          display: block;
-          text-align: center;
-          width: 196px;
-          margin: 0 auto !important;
-        }
-      }
-    }
-  }
-}
+.header {
+  background: $kayaHeaderBG;
+  background-color: $kayaHeaderBG;
 
-.contact-buttons__transparent {
-  background-color: $light-lavender;
-  background: $light-lavender;
-  th > table > tbody > tr > th {
-    width: 0;
-  }
   .columns {
-    padding-bottom: 50px;
-    padding-right: 35px !important;
-    padding-left: 35px !important;
+    padding-bottom: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
     padding-top: 20px;
-    p {
-      margin-top: 25px;
-      .contact__email {
-        @include transparent__purp;
-        img {
-          @include buttonImg;
-        }
-        /* Small only */
-        @media only screen and (max-width: #{$global-breakpoint}) {
-          display: block;
-          text-align: center;
-          margin: 0 auto !important;
-          width: 108px;
-          margin-bottom: 20px !important;
-        }
-      }
-      .contact__phone {
-        @include transparent__purp;
-        img {
-          @include buttonImg;
-        }
-        /* Small only */
-        @media only screen and (max-width: #{$global-breakpoint}) {
-          display: block;
-          text-align: center;
-          width: 196px;
-          margin: 0 auto !important;
-        }
-      }
-    }
-  }
-}
-
-.footer {
-  background-color: $brand-purpledrk;
-  background: $brand-purpledrk;
-  .columns {
-    padding-bottom: 40px;
-    padding-right: 40px !important;
-    padding-left: 40px !important;
-    padding-top: 55px;
     h1 {
-      color: $white;
-      font-weight: bold;
-      font-size: 28px;
-      margin-bottom: 20px;
+      color: $white; 
     }
-    .social__facebook {
-      display: inline-block;
-      width: 23px;
-      height: 23px;
-      margin-right: 30px;
+    .logo_white {
+      width: 128px;
     }
-    .social__twitter {
-      display: inline-block;
-      width: 23px;
-      height: 18.59px;
-      margin-right: 30px;
-    }
-    .social__youtube {
-      display: inline-block;
-      width: 24px;
-      height: 18.5px;
-      margin-right: 30px;
-    }
-    .social__instagram {
-      display: inline-block;
-      width: 23px;
-      height: 23px;
-      margin-right: 30px;
-    }
-    .social__pinterest {
-      display: inline-block;
-      width: 23px;
-      height: 23px;
-      margin-right: 30px;
-    }
-    p {
-      color: #B3A9D2;
-      font-size: 12px;
-      .unsubscribe {
-        color: #B3A9D2;
-        text-decoration: underline;
-      }
-    }
-    .social-media__links {
-      margin-bottom: 40px;
-    }
-    .address {
-      margin-bottom: 24px;
-    }
-    .unsubscribe-link {
-      margin-bottom: 40px;
+    .user_icon {
+      width: 32px;
     }
   }
 }
-// .body-drip {
-//   border-top: 8px solid #663399;
-// }
 
-// // Full Width Headers
-// .header {
-//   background: #8a8a8a;
-// }
+.sub-header {
+  background: $kayakSubHeadBG;
+  background-color: $kayakSubHeadBG;
 
-// .header .columns {
-//   padding-bottom: 0;
-// }
+  .columns {
+    padding-bottom: 5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 5px;
+    a {
+      color: $white;
+      font-size: 14px;
+      font-weight: 700;
+      .icons {
+        width: 20px;
+        margin-right: 2px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+    th {
+      text-align: center;
+    }
+    .menu-divider {
+      display: block; 
+      height: 20px; 
+      width: 2px; 
+      background: #ff690f; 
+    }
+  }
+}
 
-// .header p {
-//   color: #fff;
-//   padding-top: 15px;
-// }
+.deal_of_day {
+  background: #13191f;
+  background-color: #13191f;
+  .columns {
+    th {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+  }
+  img {
+    padding-bottom: 20px;
+  }
+  h2 {
+    color: $white;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p {
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  span {
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    &.save_amount {
+      font-size: 14px;
+    }
+    &.micro_info {
+      font-size: 11px;
+      font-weight: 300;
+      padding-bottom: 10px;
+    }
+    &.price {
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 10px; 
+    }
+  }
+  .button {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    color: $kayaHeaderBG;
+  }
+}
 
-// .header .wrapper-inner {
-//   padding: 20px;
-// }
+.content-area {
+  background: #f1f4f7;
+  background-color: #f1f4f7;
+  & > tbody > tr > th {
+    padding-top: 0; 
+  }
+  .first-offer {
+        padding-top: 16px !important;
+  }
+  .offer {
+    background: #ffffff;
+    background-color: #ffffff;
+    .columns {
+      th {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    img {
+      padding-bottom: 20px;
+    }
+    h2 {
+      color: $white;
+      font-size: 30px;
+      font-weight: 900;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    p {
+      color: #334755;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    span {
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      display: block;
+      &.save_amount {
+        color: #359CF5;
+        font-size: 14px;
+      }
+      &.micro_info {
+        font-size: 11px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        color: #334755;
+      }
+      &.price {
+        color: #14181c;
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px; 
+      }
+    }
+    .button {
+      background: #14181c;
+      background-color: #14181c;
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border: 1px solid $white;
+      border-radius: 3px;
+      color: $white;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    &.last-offer {
+      .group-icons {
+        width: 190px;
+        padding-bottom: 0;
+      }
+      h4 {
+        color: #334755;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      p {
+        color: #334755;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+.footer-top {
+  background: #222d37;
+  background-color: #222d37;
+  color: $white;
+  & > tbody > tr {
+    vertical-align: middle;
+  }
+  & > tbody > tr > th {
+    padding-bottom: 25px !important;
+    padding-top: 30px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  th {
+    padding-bottom: 0px;
+    padding-top: 0;
+  }
+  .circle-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .call-to-action {
+    display: block;
+    font-size: 14px;
+    hyphens: none;
+  }
+  .info {
+    display: block;
+    font-size: 12px; 
+    hyphens: none;
+  }
+  .info-section > table > tbody > tr > th {
+    padding-left: 10px;
+    color: $white;
+  }
+  .store-logos {
+    img {
+      height: 40px;
+      width: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+    .columns th {
+    }
+    & > table > tbody > tr > th > table > tbody > tr > th {
+      padding-bottom: 5px;
+    }
+  }
+}
+.footer-social {
+  background: #13181D;
+  background-color: #13181D;
+  & > tbody > tr > th {
+   padding-top: 20px;
+   padding-bottom: 20px;
+  }
+  th {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .logo-section {
+    img {
+      width: 128px;
+    }
+  }
+  .social-icons {
+    img {
+      width: 32px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
 
-// .header .container {
-//   background: transparent;
-// }
+.footer-menu {
+  background: #13181D;
+  background-color: #13181D;
+  border-top: 1px solid #2d3e4b;
+  border-bottom: 1px solid #2d3e4b;
 
-// // Social Media
-// table.button.facebook table td {
-//   background: #3B5998 !important;
-//   border-color: #3B5998;
-// }
-
-// table.button.twitter table td {
-//   background: #1daced !important;
-//   border-color: #1daced;
-// }
-
-// table.button.google table td {
-//   background: #DB4A39 !important;
-//   border-color: #DB4A39;
-// }
-
-// .wrapper.secondary {
-//   background: #f3f3f3;
-// }
+  .columns {
+    padding-bottom: 5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 5px;
+    a {
+      color: $white;
+      font-size: 14px;
+      font-weight: 700;
+      .icons {
+        width: 20px;
+        margin-right: 2px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+    th {
+      text-align: center;
+    }
+    .menu-divider {
+      display: block; 
+      height: 20px; 
+      width: 2px; 
+      background: #2d3e4b; 
+      background-color: #2d3e4b; 
+    }
+  }
+}
